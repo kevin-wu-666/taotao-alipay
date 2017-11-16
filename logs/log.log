@@ -1,0 +1,101 @@
+2017-11-16 15:03:52,444 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2017-11-16 15:03:52,542 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 15:03:52 CST 2017]; root of context hierarchy
+2017-11-16 15:03:52,589 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\！重要文件夹！\JavaEE\taotao-alipay\target\classes\applicationContext-dao.xml]
+2017-11-16 15:03:53,124 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\！重要文件夹！\JavaEE\taotao-alipay\target\classes\applicationContext-service.xml]
+2017-11-16 15:03:53,196 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\！重要文件夹！\JavaEE\taotao-alipay\target\classes\applicationContext-trans.xml]
+2017-11-16 15:03:53,410 [localhost-startStop-1] INFO  [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2017-11-16 15:03:53,421 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-16 15:03:54,326 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1881 ms
+2017-11-16 15:03:54,351 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'SpringMVC': initialization started
+2017-11-16 15:03:54,354 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Nov 16 15:03:54 CST 2017]; parent: Root WebApplicationContext
+2017-11-16 15:03:54,355 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [springMVC.xml]
+2017-11-16 15:03:54,453 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-16 15:03:54,599 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/pay_callback],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.wjl.alipay.controller.PayController.callback(javax.servlet.http.HttpServletRequest)
+2017-11-16 15:03:54,599 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.wjl.common.pojo.TaotaoResult com.wjl.alipay.controller.PayController.pay(java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-11-16 15:03:54,600 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/query_pay_status],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.wjl.common.pojo.TaotaoResult com.wjl.alipay.controller.PayController.queryPayStatus(java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-11-16 15:03:54,946 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Nov 16 15:03:54 CST 2017]; parent: Root WebApplicationContext
+2017-11-16 15:03:54,992 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Nov 16 15:03:54 CST 2017]; parent: Root WebApplicationContext
+2017-11-16 15:03:55,077 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'SpringMVC': initialization completed in 725 ms
+2017-11-16 15:05:50,557 [http-bio-8086-exec-3] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/pay/QrCode/qr-100551.png] in DispatcherServlet with name 'SpringMVC'
+2017-11-16 15:06:03,146 [http-bio-8086-exec-4] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/pay/QrCode/qr-100551.png] in DispatcherServlet with name 'SpringMVC'
+2017-11-16 15:06:54,734 [http-bio-8086-exec-7] INFO  [com.wjl.alipay.service.PayServiceImpl] - invoke0
+2017-11-16 15:06:54,988 [http-bio-8086-exec-7] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-11-16 15:06:55,381 [http-bio-8086-exec-7] INFO  [com.alipay.demo.trade.config.Configs] - 配置文件名: zfbinfo.properties
+2017-11-16 15:06:55,382 [http-bio-8086-exec-7] INFO  [com.alipay.demo.trade.config.Configs] - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102170441677
+, appid: 2016080800193357
+, 商户RSA私钥: MIIEvg******uutAa9
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2017-11-16 15:06:55,451 [http-bio-8086-exec-7] INFO  [com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl] - trade.precreate bizContent:{"out_trade_no":"100553","seller_id":"","total_amount":"100","undiscountable_amount":"0","subject":"淘淘商城扫码支付,订单号:100553","body":"淘淘商城购买商品共消费:100","goods_detail":[{"goods_id":"150935636235753","goods_name":"小米6 全网通 6GB+64GB 亮白色 移动联通电信4G手机 双卡双待","quantity":1,"price":"50"},{"goods_id":"151024317514286","goods_name":"小米（MI）电视","quantity":1,"price":"50"}],"operator_id":"test_operator_id","store_id":"test_store_id","extend_params":{"sys_service_provider_id":"2088100200300400500"},"timeout_express":"120m"}
+2017-11-16 15:06:56,898 [http-bio-8086-exec-7] INFO  [com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl] - {"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"100553","qr_code":"https:\/\/qr.alipay.com\/bax04429iowbhhok94po0014"},"sign":"Md45qndZWrgsnwfvIecCKUJ0/F6MSf+0szp7eJ9hI0/beu0ykgUHnpnO3ZFJH8mREq+ap2u9d7xrnkv3ZixTsJJirFZqn5CrVNZFYL06mKR+bjVpSRlqHCMGTMhCH0vaASctzlQd5JGvBtCDjfFH5Gba3JAMBHotsnG4a2LH+B82J8Rp9xRKbkAIhiC7U7V5uNBE/wTy4CtTg+G6U/NMiuguQXMGlKGQqnY/7dVGsRWgS/M02S9AIR5bOjSC81xWkQnLvtFII9KTeCj0nf012nmt/zb10Yzqr50YDQXfxNTgxDsTDbPebzCDmOZyu9T+aclcC9N3YQSLyDm0DSJM1A=="}
+2017-11-16 15:06:56,900 [http-bio-8086-exec-7] INFO  [com.wjl.alipay.service.PayServiceImpl] - 支付宝预下单成功: )
+2017-11-16 15:06:56,900 [http-bio-8086-exec-7] INFO  [com.wjl.alipay.service.PayServiceImpl] - code:10000, msg:Success
+2017-11-16 15:06:56,901 [http-bio-8086-exec-7] INFO  [com.wjl.alipay.service.PayServiceImpl] - body:{"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"100553","qr_code":"https:\/\/qr.alipay.com\/bax04429iowbhhok94po0014"},"sign":"Md45qndZWrgsnwfvIecCKUJ0/F6MSf+0szp7eJ9hI0/beu0ykgUHnpnO3ZFJH8mREq+ap2u9d7xrnkv3ZixTsJJirFZqn5CrVNZFYL06mKR+bjVpSRlqHCMGTMhCH0vaASctzlQd5JGvBtCDjfFH5Gba3JAMBHotsnG4a2LH+B82J8Rp9xRKbkAIhiC7U7V5uNBE/wTy4CtTg+G6U/NMiuguQXMGlKGQqnY/7dVGsRWgS/M02S9AIR5bOjSC81xWkQnLvtFII9KTeCj0nf012nmt/zb10Yzqr50YDQXfxNTgxDsTDbPebzCDmOZyu9T+aclcC9N3YQSLyDm0DSJM1A=="}
+2017-11-16 15:06:57,027 [http-bio-8086-exec-7] INFO  [com.wjl.alipay.service.PayServiceImpl] - filePath:E:\！重要文件夹！\JavaEE\taotao-alipay\src\main\webapp\QrCode\qr-100553.png
+2017-11-16 15:07:17,435 [http-bio-8086-exec-9] ERROR [com.wjl.alipay.controller.PayController] - 支付宝后台回调开始
+2017-11-16 15:07:17,444 [http-bio-8086-exec-9] ERROR [com.wjl.alipay.controller.PayController] - 支付宝回调,sign:MASE5Bw//bRrAWY0yQKJWfqJaC8nEDoPj4Rq1DY166VNFJPXF61VFnyNE0W5SbU5pkrO1R5L0D0A1M05A7npirZXZQqKWLX/MMWr2gPGNtSu530N6M2UXxXSSybhWGnx1/HcW1UHGPPhOkK2dQRh2Cu7Cby0YIrfwhPdvnHFDMzsThnD5fspms6PhzNJkBgk/rAtzvLrBSelO1WWrKQDlOPoAlFWU+00PnvNXsovYfAXw7pC8W47a92GTVeiiE15S7nLvtwg5niwetsLe2nCuBzZEboDRK9FTmfNWF/Qheh32G/SZrEtnDWggd0d+zMkXwr19rQzV+jyIK3D5pvKzw==,trade_status:TRADE_SUCCESS,参数:{gmt_create=2017-11-16 15:07:06, charset=utf-8, seller_email=jtvckx4244@sandbox.com, open_id=20880055084478470717113870216798, subject=淘淘商城扫码支付,订单号:100553, sign=MASE5Bw//bRrAWY0yQKJWfqJaC8nEDoPj4Rq1DY166VNFJPXF61VFnyNE0W5SbU5pkrO1R5L0D0A1M05A7npirZXZQqKWLX/MMWr2gPGNtSu530N6M2UXxXSSybhWGnx1/HcW1UHGPPhOkK2dQRh2Cu7Cby0YIrfwhPdvnHFDMzsThnD5fspms6PhzNJkBgk/rAtzvLrBSelO1WWrKQDlOPoAlFWU+00PnvNXsovYfAXw7pC8W47a92GTVeiiE15S7nLvtwg5niwetsLe2nCuBzZEboDRK9FTmfNWF/Qheh32G/SZrEtnDWggd0d+zMkXwr19rQzV+jyIK3D5pvKzw==, body=淘淘商城购买商品共消费:100, buyer_id=2088102173154985, invoice_amount=100.00, notify_id=f41139eeb3ced937c0c22b464cae560nka, fund_bill_list=[{"amount":"100.00","fundChannel":"ALIPAYACCOUNT"}], notify_type=trade_status_sync, trade_status=TRADE_SUCCESS, receipt_amount=100.00, app_id=2016080800193357, buyer_pay_amount=100.00, sign_type=RSA2, seller_id=2088102170441677, gmt_payment=2017-11-16 15:07:14, notify_time=2017-11-16 15:07:15, version=1.0, out_trade_no=100553, total_amount=100.00, trade_no=2017111621001004980200331050, auth_app_id=2016080800193357, buyer_logon_id=kna***@sandbox.com, point_amount=0.00}
+2017-11-16 15:07:17,444 [http-bio-8086-exec-9] ERROR [com.wjl.alipay.controller.PayController] - RSA2
+2017-11-16 15:07:17,445 [http-bio-8086-exec-9] ERROR [com.wjl.alipay.service.PayServiceImpl] - -------service支付宝进入回调
+2017-11-16 15:07:17,445 [http-bio-8086-exec-9] ERROR [com.wjl.alipay.service.PayServiceImpl] - TRADE_SUCCESS
+2017-11-16 15:07:17,447 [http-bio-8086-exec-9] ERROR [com.wjl.alipay.service.PayServiceImpl] - 支付宝重复调用,返回success停止调用
+2017-11-16 15:07:53,669 [http-bio-8086-exec-8] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/pay/QrCode/qr-100551.png] in DispatcherServlet with name 'SpringMVC'
+2017-11-16 15:09:21,922 [http-bio-8086-exec-9] INFO  [com.wjl.alipay.service.PayServiceImpl] - 根据id和no查询订单
+2017-11-16 15:14:25,533 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2017-11-16 15:14:25,622 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 15:14:25 CST 2017]; root of context hierarchy
+2017-11-16 15:14:25,677 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\！重要文件夹！\JavaEE\taotao-alipay\target\classes\applicationContext-dao.xml]
+2017-11-16 15:14:25,837 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\！重要文件夹！\JavaEE\taotao-alipay\target\classes\applicationContext-service.xml]
+2017-11-16 15:14:25,941 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [E:\！重要文件夹！\JavaEE\taotao-alipay\target\classes\applicationContext-trans.xml]
+2017-11-16 15:14:26,165 [localhost-startStop-1] INFO  [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [jdbc.properties]
+2017-11-16 15:14:26,176 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-16 15:14:27,247 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1714 ms
+2017-11-16 15:14:27,287 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'SpringMVC': initialization started
+2017-11-16 15:14:27,289 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Nov 16 15:14:27 CST 2017]; parent: Root WebApplicationContext
+2017-11-16 15:14:27,290 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [springMVC.xml]
+2017-11-16 15:14:27,427 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-16 15:14:27,583 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/pay_callback],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object com.wjl.alipay.controller.PayController.callback(javax.servlet.http.HttpServletRequest)
+2017-11-16 15:14:27,584 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.wjl.common.pojo.TaotaoResult com.wjl.alipay.controller.PayController.pay(java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-11-16 15:14:27,584 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/query_pay_status],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.wjl.common.pojo.TaotaoResult com.wjl.alipay.controller.PayController.queryPayStatus(java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-11-16 15:14:27,950 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Nov 16 15:14:27 CST 2017]; parent: Root WebApplicationContext
+2017-11-16 15:14:27,995 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Nov 16 15:14:27 CST 2017]; parent: Root WebApplicationContext
+2017-11-16 15:14:28,118 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'SpringMVC': initialization completed in 831 ms
+2017-11-16 15:14:52,893 [http-bio-8086-exec-1] INFO  [com.wjl.alipay.service.PayServiceImpl] - invoke0
+2017-11-16 15:14:53,353 [http-bio-8086-exec-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2017-11-16 15:14:53,731 [http-bio-8086-exec-1] INFO  [com.alipay.demo.trade.config.Configs] - 配置文件名: zfbinfo.properties
+2017-11-16 15:14:53,732 [http-bio-8086-exec-1] INFO  [com.alipay.demo.trade.config.Configs] - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102170441677
+, appid: 2016080800193357
+, 商户RSA私钥: MIIEvg******uutAa9
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2017-11-16 15:14:53,825 [http-bio-8086-exec-1] INFO  [com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl] - trade.precreate bizContent:{"out_trade_no":"100555","seller_id":"","total_amount":"110","undiscountable_amount":"0","subject":"淘淘商城扫码支付,订单号:100555","body":"淘淘商城购买商品共消费:110","goods_detail":[{"goods_id":"150935636235753","goods_name":"小米6","quantity":1,"price":"50"},{"goods_id":"151024317514286","goods_name":"小米电视","quantity":2,"price":"50"}],"operator_id":"test_operator_id","store_id":"test_store_id","extend_params":{"sys_service_provider_id":"2088100200300400500"},"timeout_express":"120m"}
+2017-11-16 15:14:54,907 [http-bio-8086-exec-1] INFO  [com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl] - {"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"100555","qr_code":"https:\/\/qr.alipay.com\/bax06156eqfzhvxviamv0096"},"sign":"jNI9NBl0R8/yh85nlYbWVVrHsb7KDIN/+bwEL0g6EIp1c2FHnCsSRE60E9sL+7KSp5kjja4NQg7unmh09Vp9B+Ignf73pmRrgmjlDR4kllvom/LWREBtqAS62rLMRqbXWVsqBlbAVgM2G7YAJ/h0T0pZ6EmvI7J+UvfKf2pNe2s6JaIkRPNM8PItPLxnMh+mW9ZCZpYjQpmSXE11ja7eVxPp8dD4vE843YyRIdT12fTHyX3PQK6yRVk+oTo6KXH5NfSGmNUkL6bBjGP/BjNHHHDRuEItt2lmyU5fyxt2Skvlnq61jvubhwfwVwQiUqiu/SWv9seGqs4m7twKBpfu4Q=="}
+2017-11-16 15:14:54,909 [http-bio-8086-exec-1] INFO  [com.wjl.alipay.service.PayServiceImpl] - 支付宝预下单成功: )
+2017-11-16 15:14:54,909 [http-bio-8086-exec-1] INFO  [com.wjl.alipay.service.PayServiceImpl] - code:10000, msg:Success
+2017-11-16 15:14:54,909 [http-bio-8086-exec-1] INFO  [com.wjl.alipay.service.PayServiceImpl] - body:{"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"100555","qr_code":"https:\/\/qr.alipay.com\/bax06156eqfzhvxviamv0096"},"sign":"jNI9NBl0R8/yh85nlYbWVVrHsb7KDIN/+bwEL0g6EIp1c2FHnCsSRE60E9sL+7KSp5kjja4NQg7unmh09Vp9B+Ignf73pmRrgmjlDR4kllvom/LWREBtqAS62rLMRqbXWVsqBlbAVgM2G7YAJ/h0T0pZ6EmvI7J+UvfKf2pNe2s6JaIkRPNM8PItPLxnMh+mW9ZCZpYjQpmSXE11ja7eVxPp8dD4vE843YyRIdT12fTHyX3PQK6yRVk+oTo6KXH5NfSGmNUkL6bBjGP/BjNHHHDRuEItt2lmyU5fyxt2Skvlnq61jvubhwfwVwQiUqiu/SWv9seGqs4m7twKBpfu4Q=="}
+2017-11-16 15:14:55,100 [http-bio-8086-exec-1] INFO  [com.wjl.alipay.service.PayServiceImpl] - filePath:E:\！重要文件夹！\JavaEE\taotao-alipay\src\main\webapp\QrCode\qr-100555.png
+2017-11-16 15:15:27,850 [http-bio-8086-exec-3] ERROR [com.wjl.alipay.controller.PayController] - 支付宝后台回调开始
+2017-11-16 15:15:27,860 [http-bio-8086-exec-3] ERROR [com.wjl.alipay.controller.PayController] - 支付宝回调,sign:C3XFj62RSyBEz+/0mbMF4ltb4AzULuanvNLq3Ei0iMrAbnzqpFCXlkShw6aINSZjWuoa0ky2auXrQ996cI2rdVbImhNXeHflKOTseewfv6jJf40P3egkH/9ltib90x1QVqfgt8wBC/WdaYoHzyf6FnF6Gro5EUaRVgkFkkMz6Sg6RD1p3gkag+J0J2IKqKHTrc8vIq49aTDkx+OcWwfzyqkI8jID/Bf9tQnagAiyMxkttMXGnNe2bwPk4j4kwiz6aDBmiY+q7IsFAQXmjII096IuBA0JEm7Sn+ayHZS8EW6hsWD0XvBjInKm05dGEeKpbCJJkSN7QFoO8F2cvNYq7A==,trade_status:TRADE_SUCCESS,参数:{gmt_create=2017-11-16 15:15:16, charset=utf-8, seller_email=jtvckx4244@sandbox.com, open_id=20880055084478470717113870216798, subject=淘淘商城扫码支付,订单号:100555, sign=C3XFj62RSyBEz+/0mbMF4ltb4AzULuanvNLq3Ei0iMrAbnzqpFCXlkShw6aINSZjWuoa0ky2auXrQ996cI2rdVbImhNXeHflKOTseewfv6jJf40P3egkH/9ltib90x1QVqfgt8wBC/WdaYoHzyf6FnF6Gro5EUaRVgkFkkMz6Sg6RD1p3gkag+J0J2IKqKHTrc8vIq49aTDkx+OcWwfzyqkI8jID/Bf9tQnagAiyMxkttMXGnNe2bwPk4j4kwiz6aDBmiY+q7IsFAQXmjII096IuBA0JEm7Sn+ayHZS8EW6hsWD0XvBjInKm05dGEeKpbCJJkSN7QFoO8F2cvNYq7A==, body=淘淘商城购买商品共消费:110, buyer_id=2088102173154985, invoice_amount=110.00, notify_id=47a0459ce1d1036afc0ac01a9ffd861nka, fund_bill_list=[{"amount":"110.00","fundChannel":"ALIPAYACCOUNT"}], notify_type=trade_status_sync, trade_status=TRADE_SUCCESS, receipt_amount=110.00, app_id=2016080800193357, buyer_pay_amount=110.00, sign_type=RSA2, seller_id=2088102170441677, gmt_payment=2017-11-16 15:15:25, notify_time=2017-11-16 15:15:25, version=1.0, out_trade_no=100555, total_amount=110.00, trade_no=2017111621001004980200331149, auth_app_id=2016080800193357, buyer_logon_id=kna***@sandbox.com, point_amount=0.00}
+2017-11-16 15:15:27,860 [http-bio-8086-exec-3] ERROR [com.wjl.alipay.controller.PayController] - RSA2
+2017-11-16 15:15:27,861 [http-bio-8086-exec-3] ERROR [com.wjl.alipay.service.PayServiceImpl] - -------service支付宝进入回调
+2017-11-16 15:15:27,861 [http-bio-8086-exec-3] ERROR [com.wjl.alipay.service.PayServiceImpl] - TRADE_SUCCESS
+2017-11-16 15:15:28,022 [http-bio-8086-exec-3] ERROR [com.wjl.alipay.service.PayServiceImpl] - 订单号:100555交易成功,支付宝交易号:2017111621001004980200331149
+2017-11-16 15:15:52,574 [http-bio-8086-exec-2] INFO  [com.wjl.alipay.service.PayServiceImpl] - 根据id和no查询订单
